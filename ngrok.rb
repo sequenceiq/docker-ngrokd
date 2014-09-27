@@ -1,8 +1,8 @@
 class Ngrok < Cask
   url 'https://s3-eu-west-1.amazonaws.com/sequenceiq/ngrok_darwin'
   homepage 'https://ngrok.com/'
-  version '1.7.1'
-  sha256 'cb7f858534c8d519b57485300ccee4baba4872fa2775adc977e9c29927804863'
+  version '1.7.2'
+  sha256 '7ea73331ee2e2d54cb0ce298ae85996436beb743c5af05ef0528aab3f19da957'
   binary 'ngrok_darwin', :target => '/usr/local/bin/ngrok'
   container_type 'naked'
   after_install do
