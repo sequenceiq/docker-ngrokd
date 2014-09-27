@@ -1,0 +1,34 @@
+: << USAGE
+oneliner installation for sequenceiq devs
+#############################################
+  curl -Ls j.mp/ngrok-seq | bash
+#############################################
+USAGE
+
+install() {
+
+brew cask install https://raw.githubusercontent.com/sequenceiq/docker-ngrokd/master/ngrok.rb
+
+  cat > ~/.ngrok <<EOF
+server_addr: server.ngrok.sequenceiq.com:4443
+trust_host_root_certs: false
+EOF
+
+cat << EOF
+******************************************
+configuration is in: ~/.ngrok
+ngrok installed, and configured to connect:
+
+  server.ngrok.sequenceiq.com:4443
+
+usage:
+
+  ngrok <port>
+  ngrok -subdomain=myservice <port>
+  
+******************************************
+EOF
+
+}
+
+install
