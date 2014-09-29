@@ -6,6 +6,7 @@ custom domain name feature for free.
 
 ```
 docker run -d --name ngrokd \
+  --restart=always \
   -p 4480:4480 \
   -p 4444:4444 \
   -p 4443:4443 \
