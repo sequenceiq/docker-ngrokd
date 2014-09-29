@@ -27,6 +27,13 @@ describes:
 You also need a new client. For that reason the version numbers is set to `1.7.2`
 
 ### OS X
+
+There is a usual *one-liner* which does the client installation and configuration:
+```
+curl -Ls j.mp/ngrok-seq
+```
+
+For reference, or if you want to do only the install step:
 ```
 brew cask install https://raw.githubusercontent.com/sequenceiq/docker-ngrokd/master/ngrok.rb
 ```
@@ -56,6 +63,8 @@ trust_host_root_certs: false
 EOF
 ```
 
+If you used the one-liner, you don't need this.
+
 ## start client
 
 as ususal
@@ -66,7 +75,7 @@ ngrok <port>
 
 ## dns config
 
-You will need an `A record` suche as:
+The server side will need an `A record` something like:
 
 ```
 *.ngrok.sequenceiq.com 54.72.21.93
