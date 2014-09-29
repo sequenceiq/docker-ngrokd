@@ -1,5 +1,5 @@
 This image aims to run a [selfhosted](https://github.com/inconshreveable/ngrok/blob/master/docs/SELFHOSTING.md)
-ngrok daemon. For example when ngrok.com becomes unavailable, ot you want to use
+ngrok daemon. For example when ngrok.com becomes unavailable, or you want to use
 custom domain name feature for free.
 
 ## running ngrok dameon
@@ -58,7 +58,7 @@ EOF
 
 ## start client
 
-as ususal
+as usual
 
 ```
 ngrok <port>
@@ -66,7 +66,7 @@ ngrok <port>
 
 ## dns config
 
-You will need an `A record` suche as:
+You will need an `A record` such as:
 
 ```
 *.ngrok.sequenceiq.com 54.72.21.93
