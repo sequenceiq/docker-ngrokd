@@ -24,8 +24,8 @@ ngrok installed, and configured to connect:
 usage:
 
   ngrok <port>
-  ngrok -subdomain=myservice <port>
-  
+  ngrok --subdomain=myservice <port>
+
 ******************************************
 EOF
 
